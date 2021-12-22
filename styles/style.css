@@ -10,7 +10,7 @@
   --sidebar-left-padding: 20px; 
   --avatar-size: 250px;
   --header-height: 60px;
-  --top-padding: calc(var(--header-height) + 20px);
+  --top-padding: calc(var(--header-height) + 40px);
   --container-width: 1024px;
   --container-padding: 20px;
 }
@@ -34,7 +34,23 @@ body {
 
 a {
   color: var(--main-color);
-  text-decoration: underline;
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--main-color);
+}
+
+a:hover::after {
+  width: 100%;
+  transition: 0.4s;
 }
 
 p {
@@ -51,16 +67,26 @@ ul {
   background: var(--code-background);
 }
 
+.nav-wrapper {
+  background: var(--main-color-rgba);
+  max-width: calc(var(--container-width) + 2 * var(--container-padding) + 10px);
+  box-shadow: 0px 1px 4px 0px var(--common-text-color);
+}
+
+.container {
+  max-width: calc(var(--container-width) + 2 * var(--container-padding));
+}
+
 .container,
 .nav-wrapper {
   position: relative;
-  max-width: calc(var(--container-width) + 2 * var(--container-padding));
   padding: 0 var(--container-padding);
   margin: 0 auto;
 }
 
 .container {
   padding-top: var(--top-padding);
+  box-shadow: 0px 0px 4px 0px var(--main-color);
 }
 
 .nav-wrapper {
@@ -78,7 +104,6 @@ ul {
   height: var(--header-height);
   top: 0;
   right: 0;
-  background: var(--main-color-rgba);
   width: 100%;
   z-index: 10;
 }
@@ -119,6 +144,7 @@ ul {
   border-bottom: 1px solid var(--light-text-color);
   position: relative;
   padding-bottom: 10px;
+  pointer-events: none;
 }
 
 .section-header i {
@@ -267,7 +293,7 @@ ul {
   height: 60px;
   margin-top: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 var(--container-padding);
 }
