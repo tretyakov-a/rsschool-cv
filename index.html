@@ -7,89 +7,98 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/header-menu.css">
   <link rel="stylesheet" href="styles/style.css">
-  <title>CV Alexander Tretyakov</title>
+  <title>CV. Alexander Tretyakov</title>
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <nav class="nav-wrapper">
-        <ul class="menu">
-          <li class="menu__item">
+      <nav class="header__nav">
+        <ul class="header-menu">
+          <li class="header-menu__item">
             <a href="#about">About</a>
           </li>
-          <li class="menu__item">
+          <li class="header-menu__item">
             <a href="#skills">Skills</a>
           </li>
-          <li class="menu__item">
+          <li class="header-menu__item">
             <a href="#languages">Languages</a>
           </li>
-          <li class="menu__item">
+          <li class="header-menu__item">
             <a href="#education">Education</a>
           </li>
-          <li class="menu__item">
+          <li class="header-menu__item">
             <a href="#code-sample">Code sample</a>
           </li>
-          <li class="menu__item">
+          <li class="header-menu__item">
             <a href="#experience">Experience</a>
           </li>
         </ul>
+        <button class="header__menu-hamburger menu-hamburger">
+          <span class="menu-hamburger__line"></span>
+          <span class="menu-hamburger__line"></span>
+          <span class="menu-hamburger__line"></span>
+        </button>
       </nav>
     </header>
     <div class="wrapper">
       <aside class="sidebar">
-        <section class="sidebar__section avatar">
-          <div class="avatar__wrapper">
-            <div class="avatar_picture-wrapper">
-              <img class="avatar__picture" src="pictures/avatar.jpg" alt="avatar">
-              <h1 class="avatar__title">
-                Alexander Tretyakov
-              </h1>
+        <div class="sidebar__adaptive-top">
+          <section class="sidebar__section avatar">
+            <div class="avatar__wrapper">
+              <div class="avatar_picture-wrapper">
+                <img class="avatar__picture" src="pictures/avatar.jpg" alt="avatar">
+                <h1 class="avatar__title">
+                  Alexander Tretyakov
+                </h1>
+              </div>
+              <div class="avatar__subtitle">
+                Begginer Front-end developer
+              </div>
             </div>
-            <div class="avatar__subtitle">
-              Front-end developer
-            </div>
+          </section>
+
+          <div class="sidebar__adaptive-right">
+            <section class="sidebar__section contacts">
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
+                  <a class="contacts-list__item-label contacts-list__item-label_github"
+                    href="https://github.com/tretyakov-a"
+                    title="Github link"
+                    target="_blank">tretyakov-a</a>
+                </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__item-label contacts-list__item-label_email"
+                    href="mailto:tpetyakov@gmail.com"
+                    title="E-mail"
+                    target="_blank">tpetyakov@gmail.com</a>
+                </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__item-label contacts-list__item-label_phone"
+                    href="tel:+79877093034"
+                    title="Phone number"
+                    target="_blank">+7 987 709-30-34</a>
+                </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__item-label contacts-list__item-label_discord"
+                    href="https://discord.com/users/Alexander%20Tretyakov#4085"
+                    title="Discord"
+                    target="_blank">Alexander Tretyakov#4085</a>
+                </li>
+              </ul>
+            </section>
+            <section class="sidebar__section about" id="about">
+              <h2 class="sidebar__section-header section-header">
+                <i class="far fa-address-card"></i>
+                About
+              </h2>
+              <p>
+                I want to change my life by mastering a new profession. I’m open to new knowledge, fast learner and good at googling.
+              </p>
+            </section>
           </div>
-        </section>
-
-        <section class="sidebar__section contacts">
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
-              <span class="contacts-list__item-icon">
-                <i class="fab fa-github"></i>
-              </span>
-              <a class="contacts-list__item-label" href="https://github.com/tretyakov-a" title="Github link">tretyakov-a</a>
-            </li>
-            <li class="contacts-list__item">
-              <span class="contacts-list__item-icon">
-                <i class="far fa-envelope"></i>
-              </span>
-              <a class="contacts-list__item-label" href="mailto:tpetyakov@gmail.com" title="E-mail">tpetyakov@gmail.com</a>
-            </li>
-            <li class="contacts-list__item">
-              <span class="contacts-list__item-icon">
-                <i class="fas fa-phone"></i>
-              </span>
-              <a class="contacts-list__item-label" href="tel:+79877093034" title="Phone number">+7 987 709-30-34</a>
-            </li>
-            <li class="contacts-list__item">
-              <span class="contacts-list__item-icon">
-                <i class="fab fa-discord"></i>
-              </span>
-              <span class="contacts-list__item-label">Alexander T (@tretyakov-a)</span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="sidebar__section about" id="about">
-          <h2 class="sidebar__section-header section-header">
-            <i class="far fa-address-card"></i>
-            About
-          </h2>
-          <p>
-            I want to change my life by mastering a new profession. I’m open to new knowledge, fast learner and good at googling.
-          </p>
-        </section>
+        </div>
 
         <section class="sidebar__section skills" id="skills">
           <h2 class="sidebar__section-header section-header">
@@ -176,7 +185,7 @@
               <img src="pictures/exp/portfolio.jpg" alt="portfolio site screenshot">
               <div class="exp__item-overlay">
                 <div class="exp__item-overlay-columns">
-                  <div class="exp__item-overlay-text">
+                  <div class="exp__item-text">
                     <h3 class="exp__item-title">
                       Portfolio layout
                     </h3>
@@ -186,24 +195,24 @@
                       </p>
                       <p>
                         It's mostly about layouting, but also has some js code. Following features are implemented:
-                        <ul class="items-list">
-                          <li class="items-list__item">
-                            Responsive/adaptive layouting
-                          </li>
-                          <li class="items-list__item">
-                            Hamburger menu
-                          </li>
-                          <li class="items-list__item">
-                            Theme/laguage switches
-                          </li>
-                          <li class="items-list__item">
-                            Tabs
-                          </li>
-                        </ul>
                       </p>
+                      <ul class="items-list">
+                        <li class="items-list__item">
+                          Responsive/adaptive layouting
+                        </li>
+                        <li class="items-list__item">
+                          Hamburger menu
+                        </li>
+                        <li class="items-list__item">
+                          Theme/laguage switches
+                        </li>
+                        <li class="items-list__item">
+                          Tabs
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="exp__item-overlay-skills">
+                  <div class="exp__item-skills">
                     <ul class="skill-labels">
                       <li class="skill-label">HTML</li>
                       <li class="skill-label">CSS</li>
@@ -213,7 +222,7 @@
                   </div>
                 </div>
                 <div class="exp__item-link">
-                  <a href="https://rolling-scopes-school.github.io/tretyakov-a-JSFEPRESCHOOL/portfolio">
+                  <a href="https://rolling-scopes-school.github.io/tretyakov-a-JSFEPRESCHOOL/portfolio" target="_blank">
                     Check it out <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>
@@ -223,7 +232,7 @@
               <img src="pictures/exp/custom-video.jpg" alt="custom-video app screenshot">
               <div class="exp__item-overlay">
                 <div class="exp__item-overlay-columns">
-                  <div class="exp__item-overlay-text">
+                  <div class="exp__item-text">
                     <h3 class="exp__item-title">
                       Custom HTML5 video interface
                     </h3>
@@ -233,24 +242,21 @@
                       </p>
                       <p>
                         It is custom html5  &lt;video&gt; interface with following features:
-                        <ul class="items-list">
-                          <li class="items-list__item">
-                            Buttons: Play, Skip Back and Forward, Mute, Settings and Fullscreen
-                          </li>
-                          <li class="items-list__item">
-                            Custom volume change slider
-                          </li>
-                          <li class="items-list__item">
-                            Custom progress bar with time popup
-                          </li>
-                          <li class="items-list__item">
-                            Settings include Skip interval and Playback speed
-                          </li>
-                        </ul>
                       </p>
+                      <ul class="items-list">
+                        <li class="items-list__item">
+                          Buttons: Play, Skip Back and Forward, Mute, Settings and Fullscreen
+                        </li>
+                        <li class="items-list__item">
+                          Custom volume change slider
+                        </li>
+                        <li class="items-list__item">
+                          Custom progress bar with time popup
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="exp__item-overlay-skills">
+                  <div class="exp__item-skills">
                     <ul class="skill-labels">
                       <li class="skill-label">HTML</li>
                       <li class="skill-label">CSS</li>
@@ -260,7 +266,7 @@
                   </div>
                 </div>
                 <div class="exp__item-link">
-                  <a href="https://rolling-scopes-school.github.io/tretyakov-a-JSFEPRESCHOOL/custom-video">
+                  <a href="https://rolling-scopes-school.github.io/tretyakov-a-JSFEPRESCHOOL/custom-video" target="_blank">
                     Check it out <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>
@@ -270,7 +276,7 @@
               <img src="pictures/exp/movie-app.jpg" alt="movie-app screenshot">
               <div class="exp__item-overlay">
                 <div class="exp__item-overlay-columns">
-                  <div class="exp__item-overlay-text">
+                  <div class="exp__item-text">
                     <h3 class="exp__item-title">
                       Movie database application
                      </h3>
@@ -279,25 +285,23 @@
                             This project is a result of my work on <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/js30%23/js30-6.md">the task</a> from <a href="https://rs.school/js-stage0/">RS&nbsp;School&nbsp;Stage0</a> course.
                         </p>
                         <p>
-                            It is simple movie database application. I used <a href="https://omdbapi.com/">OMDb API</a> to asynchronously fetch information about movies.
-                        </p>
-                        <p>
+                          It is simple movie database application. I used <a href="https://omdbapi.com/">OMDb API</a> to asynchronously fetch information about movies.
                           Following features are implemented:
-                          <ul class="items-list">
-                            <li class="items-list__item">
-                              Loading indicators, network error handling
-                            </li>
-                            <li class="items-list__item">
-                              Loading search results on user input
-                            </li>
-                            <li class="items-list__item">
-                              Responsive layouting
-                            </li>
-                          </ul>
                         </p>
+                        <ul class="items-list">
+                          <li class="items-list__item">
+                            Loading indicators, network error handling
+                          </li>
+                          <li class="items-list__item">
+                            Loading search results on user input
+                          </li>
+                          <li class="items-list__item">
+                            Responsive layouting
+                          </li>
+                        </ul>
                      </div>
                   </div>
-                  <div class="exp__item-overlay-skills">
+                  <div class="exp__item-skills">
                     <ul class="skill-labels">
                       <li class="skill-label">HTML</li>
                       <li class="skill-label">CSS</li>
@@ -307,7 +311,7 @@
                   </div>
                 </div>
                 <div class="exp__item-link">
-                  <a href="https://rolling-scopes-school.github.io/tretyakov-a-JSFEPRESCHOOL/movie-app">
+                  <a href="https://rolling-scopes-school.github.io/tretyakov-a-JSFEPRESCHOOL/movie-app" target="_blank">
                     Check it out <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>            
@@ -318,7 +322,7 @@
       </main>
     </div>
     <footer class="footer">
-      <a class="logo" href="https://rs.school/js-stage0/">
+      <a class="logo" href="https://rs.school/js-stage0/" title="https://rs.school/js-stage0/" target="_blank">
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 552.8 205.3">
           <style>.st0{fill:#fff}.st1{clip-path:url(#SVGID_2_)}.st2{clip-path:url(#SVGID_4_)}.st3{clip-path:url(#SVGID_6_)}.st4{clip-path:url(#SVGID_8_)}.st5{fill:#fff;stroke-width:4;stroke-miterlimit:10}.st6{clip-path:url(#SVGID_8_)}.st6,.st7{fill:none;stroke-width:4;stroke-miterlimit:10}.st8,.st9{clip-path:url(#SVGID_10_)}.st9{fill:none;stroke-width:4;stroke-miterlimit:10}</style>
           <title>rs_school_js</title>
@@ -332,7 +336,7 @@
       <div>
         <div class="footer__github-link">
           <i class="fab fa-github"></i>
-          <a href="https://github.com/tretyakov-a">tretyakov-a</a>,
+          <a href="https://github.com/tretyakov-a" title="GitHub" target="_blank">tretyakov-a</a>,
           <span>2021</span>
         </div>
       </div>
@@ -340,5 +344,6 @@
   </div>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
+  <script src="index.js"></script>
 </body>
 </html>
