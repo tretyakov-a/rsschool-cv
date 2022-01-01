@@ -45,7 +45,7 @@
     <div class="wrapper">
       <aside class="sidebar">
         <div class="sidebar__adaptive-container sidebar__adaptive-container_top">
-          <section class="sidebar__section avatar">
+          <div class="sidebar__section avatar">
             <div class="avatar__wrapper">
               <div class="avatar__picture-wrapper">
                 <img class="avatar__picture" src="pictures/avatar.jpg" alt="avatar">
@@ -57,10 +57,10 @@
                 Begginer Front-end developer
               </div>
             </div>
-          </section>
+          </div>
 
           <div class="sidebar__adaptive-right">
-            <section class="sidebar__section contacts">
+            <div class="sidebar__section contacts">
               <ul class="contacts-list">
                 <li class="contacts-list__item">
                   <a class="contacts-list__item-label contacts-list__item-label_github"
@@ -87,7 +87,7 @@
                     target="_blank">Alexander Tretyakov#4085</a>
                 </li>
               </ul>
-            </section>
+            </div>
             <section class="sidebar__section about" id="about">
               <h2 class="sidebar__section-header section-header">
                 <i class="far fa-address-card"></i>
@@ -165,8 +165,8 @@
             Codewars <a href="https://www.codewars.com/kata/513e08acc600c94f01000001">RGB To Hex Conversion</a> kata:
           </p>
 <pre><code class="language-javascript">function rgb(r, g, b){
-  const toRound = n => n < 0 ? 0 : n > 255 ? 255 : n;
-  const toHex = n => {
+  const toRound = n =&gt; n &lt; 0 ? 0 : n &gt; 255 ? 255 : n;
+  const toHex = n =&gt; {
     const output = n.toString(16).toUpperCase();
     return (output.length === 1 ? '0' : '') + output;
   }
