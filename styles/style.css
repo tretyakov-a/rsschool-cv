@@ -320,8 +320,10 @@ ul {
   overflow: hidden;
   box-shadow: 4px 4px 0px 0px var(--main-color);
   border: 1px solid transparent;
+  margin-bottom: 5px;
   border-radius: 10px 0 10px 0;
 }
+
 .exp__item:not(:last-child) {
   margin-bottom: 30px;
 }
