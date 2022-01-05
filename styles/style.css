@@ -23,7 +23,6 @@
 
   --font-size: 16px;
 }
-
 *,
 ::after,
 ::before {
@@ -36,8 +35,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
-  font-family: 'Nanum Gothic Coding', monospace;
+  /* font-family: "DM Sans", sans-serif; */
+  font-family: "Nanum Gothic Coding", sans-serif;
   font-size: var(--font-size);
   background-color: var(--bg-color);
   color: var(--common-text-color);
@@ -112,6 +113,7 @@ ul {
 .section-header {
   font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 1px;
   border-bottom: 1px solid var(--light-text-color);
   position: relative;
   padding-bottom: 10px;
@@ -217,6 +219,7 @@ ul {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 400;
+  letter-spacing: 2px;
   color: var(--title-color);
   background-color: var(--main-color-rgba);
   position: absolute;
@@ -348,7 +351,10 @@ ul {
   position: absolute;
   right: var(--container-padding);
   top: calc(var(--container-padding));
+  opacity: 0;
+  transition: 0.2s ease-in;
 }
+
 .exp__item-link i {
   margin-left: 5px;
 }
@@ -361,7 +367,7 @@ ul {
   top: 0;
   left: 0;
   transform: translateY(calc(100% - 65px));
-  transition: 0.2s ease-in;
+  transition: 0.4s ease-in;
   color: var(--title-color);
   background-color: var(--main-color-rgba-80);
   padding: var(--container-padding);
@@ -402,6 +408,10 @@ ul {
   transform: translateX(0%);
   transition: 0.2 ease-in-out;
   transition-delay: 0.4s;
+}
+
+.exp__item-overlay:hover .exp__item-link {
+  opacity: 1;
 }
 
 .exp__item-overlay .items-list__item::before {

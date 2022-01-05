@@ -15,11 +15,13 @@
   cursor: pointer;
   display: block;
   padding: 18px;
+  padding-top: 20px;
   height: 100%;
   text-align: center;
   text-decoration: none;
   color: var(--title-color);
   font-weight: bold;
+  letter-spacing: 1px;
   transition: 0.2s;
 }
 
@@ -147,22 +149,6 @@
   }
 }
 
-/* .header-menu {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  width: 472px;
-  justify-content: space-around;
-}
-.header-menu__item-link {
-  display: block;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 50px;
-  color: var(--main-color);
-} */
-
 @keyframes menuSlideIn {
   from {
     transform: translateX(100%);
@@ -238,14 +224,13 @@
   .menu-hamburger_hide {
     display: block;
     position: relative;
-    /* position: absolute;
-    right: 64px;
-    top: 20px; */
   }
+
   .menu-hamburger_hide .menu-hamburger__line {
     position: absolute;
     background: var(--main-color);
   }
+  
   .menu-hamburger_hide .menu-hamburger__line:nth-child(1) {
     animation: rotateClockwiseReverse 0.2s ease-in forwards;
   }
